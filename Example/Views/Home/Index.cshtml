@@ -37,14 +37,14 @@
         </table>
     </div>
 </div>
+@section css{
+    <!--initialized with bootstrap styling...make sure you use this if running bootstrap!!-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.18/datatables.min.css" />
+}
 @section scripts
 {
-    <!--initialized with bootstrap styling...make sure you use this if running bootstrap!!-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.12/datatables.min.css" />
-
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.12/datatables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.18/datatables.min.js"></script>
     <script>
-
         $(document).ready(function () {
             // Setup - add a text input to each footer cell(multi-column search)
             //https://datatables.net/examples/api/multi_filter.html
@@ -52,9 +52,6 @@
                 var title = $(this).text();
                 $(this).html('<input type="text" placeholder="Search ' + title + '" />');
             });
-
-
-
 
             var table = $('#example').DataTable({
                 "processing": true,
@@ -87,7 +84,6 @@
                     }
                 });
             });
-
         });
     </script>
 }

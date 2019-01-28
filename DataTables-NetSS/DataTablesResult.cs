@@ -31,10 +31,7 @@ namespace DataTablesNetSS
         /// Optional: If an error occurs during the running of the server-side processing script, you can inform the user of this error by passing back the error message to be displayed using this parameter. Do not include if there is no error.
         /// </summary>
         public string error { get; set; }
-        public DataTablesResult()
-        {
 
-        }
         /// <summary>
         /// do some sanity checks to ease debugging
         /// </summary>
